@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #111827;
+      color: #D1D5DB;
+    }
+    .nav-link {
+      @apply px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white;
+    }
+    .nav-link-active {
+      @apply bg-gray-900 text-white;
+    }
+    .tag {
+      @apply bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-sm;
+    }
+  </style>
+</head>
+<body class="antialiased">
+<nav class="bg-gray-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center">
+<span class="material-icons text-white mr-2">account_circle</span>
+<span class="font-semibold text-xl text-white">Portfolio</span>
+</div>
+<div class="hidden md:block">
+<div class="ml-10 flex items-baseline space-x-4">
+<a class="nav-link nav-link-active" href="#">About Me</a>
+<a class="nav-link" href="#">Technical Skills</a>
+<a class="nav-link" href="#">Education</a>
+<a class="nav-link" href="#">Courses</a>
+<a class="nav-link" href="#">Projects</a>
+<a class="nav-link" href="#">Contact</a>
+</div>
+</div>
+<div class="hidden md:block">
+<span class="material-icons text-gray-400">person</span>
+</div>
+<div class="-mr-2 flex md:hidden">
+<button aria-controls="mobile-menu" aria-expanded="false" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="mobile-menu-button" type="button">
+<span class="sr-only">Open main menu</span>
+<span class="material-icons">menu</span>
+</button>
+</div>
+</div>
+</div>
+<div class="md:hidden hidden" id="mobile-menu">
+<div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+<a class="nav-link nav-link-active block" href="#">About Me</a>
+<a class="nav-link block" href="#">Technical Skills</a>
+<a class="nav-link block" href="#">Education</a>
+<a class="nav-link block" href="#">Courses</a>
+<a class="nav-link block" href="#">Projects</a>
+<a class="nav-link block" href="#">Contact</a>
+</div>
+<div class="pt-4 pb-3 border-t border-gray-700">
+<div class="flex items-center px-5">
+<div class="flex-shrink-0">
+<span class="material-icons text-gray-400">person</span>
+</div>
+<div class="ml-3">
+<div class="text-base font-medium leading-none text-white">Olivia Bennett</div>
+<div class="text-sm font-medium leading-none text-gray-400">olivia@example.com</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<main class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<img alt="Batman portrait" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt4J1KTrxE11qPwNAUrMCoZPwS1edniYDdlI71OEOPi6lDyFVp02UgkGwU_vgIgZy6PGyhYIpyvKywQLFgEFLexSFZi6H_v7_QtmmljQ2yeyCV_7HBOE9yELiJPMUj3qOyJIQuaZdnky98aGYN-zgmnES-_AEQvS5KVWpxxwqKxiDuir5m5m02ev2SzQ3CjMVZIae9NHfrRAxvFYDbuLbjK2Aj5wB4IU-4tCfkFQA3nL2NQJCYIRrm6tGlmPqKx-n1zv7V54D2Vkj1"/>
+<h1 class="text-3xl font-bold text-white">Olivia Bennett</h1>
+<p class="text-xl text-gray-400">Software Engineer</p>
+<p class="text-md text-gray-500">San Francisco, CA</p>
+</div>
+<section class="mb-12">
+<h2 class="text-2xl font-semibold text-white mb-4">About Me</h2>
+<p class="text-gray-400 leading-relaxed">
+        I am a passionate software engineer with a strong foundation in computer science principles and a proven track record
+        of delivering high-quality software solutions. My expertise lies in full-stack development, with a focus on creating
+        scalable and maintainable applications. I am adept at collaborating with cross-functional teams and thrive in dynamic
+        environments where I can leverage my problem-solving skills to tackle complex challenges.
+      </p>
+</section>
+<section class="mb-12">
+<h2 class="text-2xl font-semibold text-white mb-4">Technical Skills</h2>
+<div class="flex flex-wrap gap-2">
+<span class="tag">JavaScript</span>
+<span class="tag">React</span>
+<span class="tag">Node.js</span>
+<span class="tag">Python</span>
+<span class="tag">Django</span>
+<span class="tag">SQL</span>
+<span class="tag">AWS</span>
+<span class="tag">Docker</span>
+<span class="tag">Git</span>
+<span class="tag">HTML/CSS</span>
+</div>
+</section>
+<section class="mb-12">
+<h2 class="text-2xl font-semibold text-white mb-4">Education</h2>
+<div class="flex items-start">
+<span class="material-icons text-gray-500 mr-4 mt-1">school</span>
+<div>
+<h3 class="text-lg font-medium text-white">Bachelor of Science in Computer Science</h3>
+<p class="text-gray-400">GPA: 3.8</p>
+<p class="text-gray-500 text-sm">2016 - 2020</p>
+</div>
+</div>
+</section>
+<section class="mb-12">
+<h2 class="text-2xl font-semibold text-white mb-4">Courses</h2>
+<div class="space-y-4">
+<div>
+<h3 class="text-lg font-medium text-white">Machine Learning</h3>
+<p class="text-gray-400">Coursera</p>
+</div>
+<div>
+<h3 class="text-lg font-medium text-white">Advanced React</h3>
+</div>
+</div>
+</section>
+</main>
+<script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
+      mobileMenuButton.setAttribute('aria-expanded', !expanded);
+      mobileMenu.classList.toggle('hidden');
+      const menuIcon = mobileMenuButton.querySelector('.material-icons');
+      menuIcon.textContent = !expanded ? 'close' : 'menu';
+    });
+  </script>
+
+</body></html>
